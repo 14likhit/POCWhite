@@ -55,6 +55,24 @@ android {
             buildConfigField 'String', 'API_URL', '"https://mm.com/api/"'
         }
     }
+    sourceSets {
+        burgerqueen {
+            java {
+                srcDirs 'src/burgerqueen/java'
+            }
+            res {
+                srcDirs 'src/burgerqueen/res'
+            }
+        }
+        mcmickeys {
+            java {
+                srcDirs 'src/mcmickeys/java'
+            }
+            res {
+                srcDirs 'src/mcmickeys/res'
+            }
+        }
+    }
 
 }
 
