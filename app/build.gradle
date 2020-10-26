@@ -30,6 +30,32 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    flavorDimensions 'app'
+
+    productFlavors {
+
+        burgerqueen {
+            dimension 'app'
+
+            applicationId 'com.burgerqueen.app'
+            versionCode 1
+            versionName '1.0.0'
+
+            buildConfigField 'String', 'API_URL', '"https://bq.com/api/"'
+        }
+
+        mcmickeys {
+            dimension 'app'
+
+            applicationId 'com.mcmickeys.app'
+            versionCode 3
+            versionName '1.0.1'
+
+            buildConfigField 'String', 'API_URL', '"https://mm.com/api/"'
+        }
+    }
+
 }
 
 dependencies {
